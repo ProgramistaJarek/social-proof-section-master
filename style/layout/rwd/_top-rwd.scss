@@ -1,0 +1,49 @@
+@media (min-width: 1024px) {
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+      url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+  }
+  main {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .top {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .info {
+      width: 450px;
+      text-align: left;
+      h1 {
+        margin-left: 0;
+        font-size: 2rem;
+      }
+      p {
+        line-height: 1.3rem;
+      }
+    }
+    .star {
+      .star-move {
+        &:nth-child(2) {
+          margin-left: 3.5rem;
+        }
+        &:nth-child(3) {
+          margin-left: 6rem;
+        }
+      }
+      .star-card {
+        flex-direction: row;
+        justify-content: center;
+        width: 450px;
+        p {
+          margin: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
